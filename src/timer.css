@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'BentonSans-Medium';
+    src: url('font/BentonSans_Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'BentonSans-Regular';
+    src: url('font/BentonSans_Regular.otf') format('opentype');
+}
+
+#timer-bar {
+    font-family: 'BentonSans-Medium', sans-serif;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background: rgb(255, 0, 0);
+    border-radius: 36px;
+    padding: 0 20px;
+    width: max-content;
+    height: 72px;
+    left: 3vw;
+    right: 3vw;
+    margin: auto;
+    bottom: 10px;
+    color: #FFF;
+}
+
+.timer {
+    display: flex;
+}
+
+.text {
+    margin-right: 10px;
+}
+
+.timer-cell {
+    margin: 0 10px;
+}
+
+.timer-item {
+    font-family: 'BentonSans-Regular', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+}
+
+.timer-digit {
+    font-weight: 500;
+    height: 30px;
+    font-size: 35px;
+    letter-spacing: 1.97px;
+    margin-bottom: 8px;
+}
+
+.timer-separator {
+    height: 47px;
+    width: 0;
+    border-right: 1px solid white;
+    -webkit-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+    margin: 3px 19px 3px 11px;
+}
+
+@media only screen and (min-width: 768px) {
+    #timer-bar {
+        flex-direction: row!important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #timer-bar {
+        padding: 10px 20px 20px;
+        flex-direction: column!important;
+    }
+    .text {
+        padding-bottom: 10px;
+    }
+}
